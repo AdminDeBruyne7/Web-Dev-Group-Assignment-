@@ -1,0 +1,79 @@
+body{
+    padding-top: 100px; 
+}
+/* Checkout Section */
+.checkout-section {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.checkout-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout-section label {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.checkout-section input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.checkout-section input[type="radio"] {
+    width: 20px; /* Reduce the width to make the clickable area smaller */
+    height: 20px; /* Add height to match width and control size */
+    padding: 0; /* Remove padding to avoid extra space */
+    border: 1px solid #ccc;
+    border-radius: 50%; /* Ensure it stays circular */
+    transform: scale(0.8); /* Scale down the radio button appearance */
+    vertical-align: middle; /* Align with text */
+}
+
+.checkout-section .payment-methods,
+.checkout-section .delivery-method {
+    display: flex;
+    gap: 10px;
+}
+
+.checkout-section .delivery-options {
+    margin-top: 20px;
+}
+
+.checkout-section button[type="button"],
+.checkout-section button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.checkout-section button[type="button"]:hover,
+.checkout-section button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.checkout-section #locationSaved {
+    color: green;
+    font-size: 1em;
+    margin-top: 10px;
+}
